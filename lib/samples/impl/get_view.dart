@@ -32,7 +32,7 @@ class $_viewName extends $_controllerName {
     return const ScaffoldPage(
       content: Center(
         child: Text(
-          'DashboardView is working',
+          '$_viewName is working',
           style: TextStyle(fontSize: 20),
         ),
       ),
