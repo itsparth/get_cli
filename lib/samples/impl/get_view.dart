@@ -25,9 +25,11 @@ import 'package:get/get.dart';
 $import
 
 class $_viewName extends $_controllerName {
+  const $_viewName({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return ScaffoldPage(
+    return const ScaffoldPage(
       content: Center(
         child: Text(
           'DashboardView is working',
