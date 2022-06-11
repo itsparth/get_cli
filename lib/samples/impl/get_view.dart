@@ -20,22 +20,18 @@ class GetViewSample extends Sample {
   String get _controllerName =>
       _controller.isNotEmpty ? 'GetView<$_controller>' : 'GetView';
 
-  String get _flutterView => '''import 'package:flutter/material.dart';
+  String get _flutterView => '''import 'package:fluent_ui/fluent_ui.dart';
 import 'package:get/get.dart'; 
 $import
 
 class $_viewName extends $_controllerName {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('$_viewName'),
-        centerTitle: true,
-      ),
-      body: Center(
+    return ScaffoldPage(
+      content: Center(
         child: Text(
-          '$_viewName is working', 
-          style: TextStyle(fontSize:20),
+          'DashboardView is working',
+          style: TextStyle(fontSize: 20),
         ),
       ),
     );
